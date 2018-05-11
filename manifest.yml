@@ -2,10 +2,11 @@
 applications:
 - name: pcf-pas-roadmap-redirect
   memory: 64M
-  instances: 1
+  instances: 2
   buildpack: staticfile_buildpack
   env:
-    REDIRECT_URL: https://docs.google.com/presentation/d/1bIb6S-J9e9Zv2sFGg2BgrE2ECT9Ntunwt9Z4XgLe_sE?
+    REDIRECT_URL: https://docs.google.com/presentation/d/1m621nh8jAxtBZlrfFO77unUeNekXh1fwHfAwEyTFQLo/edit?usp=sharing
+#    REDIRECT_URL: https://docs.google.com/presentation/d/1bIb6S-J9e9Zv2sFGg2BgrE2ECT9Ntunwt9Z4XgLe_sE?
 #    REDIRECT_URL: https://docs.google.com/presentation/d/1I-xqaHBMO0GAvBJX9DKnsWu35ARZtOTCum9mpLXOdhM/view?
   routes:
   - route: pcf-pas-roadmap.cfapps.io
